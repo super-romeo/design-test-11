@@ -25,7 +25,12 @@
    past the fold there); one --p-h for the four feature panels; the doc page needs no room for its note */
 @media (min-width: 640px) { .hero--centred .hero__window { min-height: 160px; } }
 #was .panel { --p-h: 236px; }
-#was .ui-doc { padding-right: 0; }
+/* brief 6 (same content on every layout): the hero picture rises out of the frame where the window did,
+   with the window's radius and shadow (narrower than the window was, so the 160px frame of a 1280x800 screen shows its
+   top third); the four facts are a strip right under the hero (kit .hero__facts) */
+.hero__window .fit > img { width: 100%; max-width: var(--fit-max, 100%); height: auto; aspect-ratio: 3 / 2; object-fit: cover;
+  margin-inline: auto; border-radius: var(--r-md); box-shadow: 0 1px 2px rgb(0 0 0 / .08), 0 18px 40px -18px rgb(0 0 0 / .32); }
+.facts-strip { padding-bottom: var(--s-7); }
 @media (max-width: 639px) { #was .panel { --p-h: 200px; } }
 
 /* 3. the shared base stylesheet: its 920px .wrap, the button margin, the sticky blurred header row

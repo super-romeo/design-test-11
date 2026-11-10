@@ -16,23 +16,17 @@
 <link rel="stylesheet" href="taste/ui/cards.css">
 <link rel="stylesheet" href="taste/motion/motion.css">
 <link rel="stylesheet" href="taste/layout/layout.css">
-<link rel="stylesheet" href="taste/ui/base.css">
-<link rel="stylesheet" href="taste/ui/window/fragment.css">
-<link rel="stylesheet" href="taste/ui/checklist/fragment.css">
-<link rel="stylesheet" href="taste/ui/doc/fragment.css">
-<link rel="stylesheet" href="taste/ui/notify/fragment.css">
 <link rel="stylesheet" href="variant.css">
 </head>
 <body>
 <div style="position:relative;z-index:9999;display:flex;gap:16px;justify-content:center;align-items:center;padding:6px 12px;background:#05080b;color:#fff;font:600 13px/1.4 Inter,system-ui,sans-serif"><a href="https://10.design-test.dokuline.com/" style="color:#b1ddff;text-decoration:none">← 10</a><span>Layout 11 / 21</span><a href="https://12.design-test.dokuline.com/" style="color:#b1ddff;text-decoration:none">12 →</a></div>
 <!-- type: software
-     deal: hero centred, palette linen-harbour (the client's blue mark rules out the first deal's orange), type instrument,
-     radius soft, buttons pill, ground sky, nav-mega (flat), rhythm surface-pairs, close-type, footer-statement, mark ring
-     kit: taste/ (system.css, ui/cards.css, motion/motion.css, layout/layout.css, ui/base.css, four ui fragments; CSS only: no script that could take a click) -->
+     deal: hero centred, radius soft, buttons pill, ground sky, nav-mega (flat), rhythm surface-pairs, close-type, footer-statement
+     kit: taste/ (system.css, ui/cards.css, motion/motion.css, layout/layout.css; CSS only: no script that could take a click) -->
 
 <header class="nav">
   <div class="wrap nav__bar">
-    <a class="nav__logo" href="index.html" data-ev="click_logo_home"><span class="mark" data-mark="ring" aria-hidden="true"></span>Lorem Ipsum</a>
+    <a class="nav__logo" href="index.html" data-ev="click_logo_home">Lorem Ipsum</a>
     <nav class="nav__links" aria-label="Lorem">
       <div class="nav__item"><a class="nav__link" href="#was" data-ev="click_nav_was">Dolor sit</a></div>
       <div class="nav__item"><a class="nav__link" href="#" data-ev="click_nav_preis">Amet</a></div>
@@ -50,125 +44,58 @@
   <section class="hero hero--centred" data-enter aria-labelledby="hero-h">
     <div class="wrap"><div class="hero-text">
       <div class="hero__c">
-        <p class="pill"><span>Lorem ipsum dolor</span><span class="muted">Sit amet consectetur elit</span></p>
+        <p class="pill">Lorem ipsum dolor</p>
         <h1 id="hero-h">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
         <p class="hero__lead">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-        <div class="btn-row"><a class="btn btn--primary" href="#" data-ev="cta_click">Lorem ipsum<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a></div>
+        <div class="btn-row"><a class="btn btn--primary" href="#" data-ev="cta_click">Lorem ipsum</a></div>
+        <p class="t-small muted">Excepteur sint occaecat · Cupidatat non proident sunt in culpa</p>
       </div>
-      <div class="hero__window" role="img" aria-label="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
-        <div class="stage"><div class="at-rise fit" style="--fit-max: 880px; --ax: 32px; --ay: 32px" aria-hidden="true">
-          <div class="ui ui-panel ui-win">
-            <div class="ui-win__bar">
-              <span class="ui-dots"><i></i><i></i><i></i></span>
-              <span class="ui-win__crumb">Lorem <i>/</i> <b>Ipsum</b></span>
-              <span class="ui-spacer"></span>
-              <span class="ui-win__search"><svg class="ui-icon" viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3 3"/></svg><span class="ui-win__ph">Dolor</span></span>
-            </div>
-            <div class="ui-win__body">
-              <div class="ui-win__side">
-                <span class="ui-win__nav is-on"><svg class="ui-icon" viewBox="0 0 16 16"><path d="M2.5 9h3l1 1.5h3l1-1.5h3"/><path d="M2.5 9 4 3.5h8L13.5 9v3.5h-11z"/></svg>Lorem<em>4</em></span>
-                <span class="ui-win__nav"><svg class="ui-icon" viewBox="0 0 16 16"><path d="m3.5 8.4 2.8 2.8 6.2-6.4"/></svg>Ipsum</span>
-                <span class="ui-win__nav"><svg class="ui-icon" viewBox="0 0 16 16"><path d="M2.5 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg>Dolor sit</span>
-                <span class="ui-win__label">Consectetur</span>
-                <span class="ui-win__nav"><span class="ui-win__hash">#</span>Adipiscing</span>
-                <span class="ui-win__nav"><span class="ui-win__hash">#</span>Sed, do, ut</span>
-              </div>
-              <div class="ui-win__main">
-                <div class="ui-win__cols"><span>Lorem</span><span>Ipsum</span><span>Dolor</span><span>Sit</span></div>
-                <ul class="ui-win__rows">
-                  <li class="ui-win__row is-sel"><span class="ui-avatar" data-tone="4">LI</span><span class="ui-win__who">Lorem Ipsum</span><span class="ui-win__sub">Lorem 312 · consectetur adipiscing</span><span class="ui-win__st is-you">Lorem</span><span class="ui-win__age">Lo</span></li>
-                  <li class="ui-win__row"><span class="ui-avatar" data-tone="4">DA</span><span class="ui-win__who">Dolor Amet</span><span class="ui-win__sub">Ipsum 311 · sed do eiusmod tempor</span><span class="ui-win__st">Ipsum</span><span class="ui-win__age">Ip</span></li>
-                  <li class="ui-win__row"><span class="ui-avatar" data-tone="4">SE</span><span class="ui-win__who">Sed Eiusmod</span><span class="ui-win__sub">Lorem 312 · ut labore et dolore</span><span class="ui-win__st is-done">Adipiscing</span><span class="ui-win__age">Do</span></li>
-                  <li class="ui-win__row"><span class="ui-avatar" data-tone="4">TL</span><span class="ui-win__who">Tempor Labore</span><span class="ui-win__sub">Lorem 312 · magna aliqua</span><span class="ui-win__st">Ipsum</span><span class="ui-win__age">Si</span></li>
-                  <li class="ui-win__row"><span class="ui-avatar" data-tone="4">MA</span><span class="ui-win__who">Magna Aliqua</span><span class="ui-win__sub">Ipsum 311 · quis nostrud exercitation</span><span class="ui-win__st">Eiusmod</span><span class="ui-win__age">Am</span></li>
-                  <li class="ui-win__row"><span class="ui-avatar" data-tone="4">EM</span><span class="ui-win__who">Enim Minim</span><span class="ui-win__sub">Lorem 312 · ullamco laboris</span><span class="ui-win__st is-done">Tempor</span><span class="ui-win__age">Am</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <div class="hero__window">
+        <div class="stage"><div class="at-rise fit" style="--fit-max: 560px; --ax: 32px; --ay: 24px">
+          <img src="pic-hero.svg" alt="Image 1" width="1200" height="800">
         </div></div>
       </div>
     </div></div>
   </section>
+  <!-- the four facts: a strip right under the hero (the hero itself is exactly one screen) -->
+  <div class="wrap facts-strip">
+    <dl class="hero__facts">
+    <div><dt>Lorem</dt><dd>Ipsum dolor sit amet</dd></div>
+    <div><dt>Dolor</dt><dd>Consectetur adipiscing</dd></div>
+    <div><dt>Amet</dt><dd>Sed do eiusmod</dd></div>
+    <div><dt>Elit</dt><dd>Tempor incididunt</dd></div>
+  </dl>
+  </div>
 
   <section id="was" class="ground-surface" data-view="features_view" aria-labelledby="was-h">
     <div class="wrap">
       <div class="section-head">
-        <h2 id="was-h">Dolor sit amet. <span class="muted">Consectetur adipiscing elit sed do</span></h2>
+        <h2 id="was-h">Dolor sit amet <span class="muted">Consectetur adipiscing elit sed do</span></h2>
       </div>
       <div class="grid">
         <article class="card card--row span-3">
           <h3>Lorem ipsum</h3>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
           <a class="link card__link" href="#" data-ev="feature_sitzungen">Lorem ipsum</a>
-          <div class="panel panel--inset" role="img" aria-label="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
-            <div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max: 340px; --ax: 16px; --ay: 20px" aria-hidden="true">
-              <div class="ui ui-panel ui-checks">
-                <div class="ui-checks__head"><div class="ui-title">Lorem ipsum</div><div class="ui-spacer"></div><div class="ui-meta">6 / 9</div></div>
-                <div class="ui-checks__bar"><i style="--k:0.67"></i></div>
-                <ul class="ui-checks__list">
-                  <li class="ui-check is-done"><div class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></div><div class="ui-check__label">Lorem 5 · dol. 7301</div></li>
-                  <li class="ui-check is-done"><div class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></div><div class="ui-check__label">Lorem 6 · ipsum</div></li>
-                  <li class="ui-check"><div class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></div><div class="ui-check__label">Lorem 7 · consectetur</div></li>
-                  <li class="ui-check"><div class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></div><div class="ui-check__label">Lorem 8 · eiusmod</div></li>
-                </ul>
-              </div>
-            </div></div>
-          </div>
+          <div class="panel panel--inset"><img class="frame__img" src="pic-card-1.svg" alt="Image 2" width="800" height="600"></div>
         </article>
         <article class="card card--row span-3">
           <h3>Dolor sit amet</h3>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
           <a class="link card__link" href="#" data-ev="feature_rechnung">Lorem ipsum</a>
-          <div class="panel panel--inset" role="img" aria-label="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
-            <div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max: 340px; --ax: 16px; --ay: 20px" aria-hidden="true">
-              <div class="ui ui-doc">
-                <div class="ui-doc__page">
-                  <div class="ui-doc__label">Lorem · Ipsum dolor sit</div>
-                  <div class="ui-doc__title">Lorem 312 · Adipiscing</div>
-                  <div class="ui-doc__text">Sed do eiusmod tempor incididunt, <mark class="ui-doc__mark is-on">labore 7301</mark>.</div>
-                  <div class="ui-doc__text">Dolore, magna et aliqua: <mark class="ui-doc__mark is-seen">Ipsum 311</mark>.</div>
-                </div>
-              </div>
-            </div></div>
-          </div>
+          <div class="panel panel--inset"><img class="frame__img" src="pic-card-2.svg" alt="Image 3" width="800" height="600"></div>
         </article>
         <article class="card card--row span-3">
           <h3>Consectetur elit</h3>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
           <a class="link card__link" href="#" data-ev="feature_pruefung">Lorem ipsum</a>
-          <div class="panel panel--inset" role="img" aria-label="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
-            <div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max: 340px; --ax: 16px; --ay: 20px" aria-hidden="true">
-              <div class="ui ui-notify">
-                <ul class="ui-notify__list">
-                  <li class="ui-note"><div class="ui-note__ico"><svg class="ui-icon" viewBox="0 0 16 16"><path d="M8 2.5 14 13H2z"/><path d="M8 6.5v3M8 11.5v.01"/></svg></div><div class="ui-note__text"><div class="ui-note__title">Lorem ipsum</div><div class="ui-note__body">Dolor sit amet, consectetur</div></div></li>
-                  <li class="ui-note"><div class="ui-note__ico"><svg class="ui-icon" viewBox="0 0 16 16"><path d="M8 2.5 14 13H2z"/><path d="M8 6.5v3M8 11.5v.01"/></svg></div><div class="ui-note__text"><div class="ui-note__title">Sed do eiusmod</div><div class="ui-note__body">Tempor incididunt, ut labore et</div></div></li>
-                  <li class="ui-note"><div class="ui-note__ico"><svg class="ui-icon" viewBox="0 0 16 16"><path d="m3.5 8.4 2.8 2.8 6.2-6.4"/></svg></div><div class="ui-note__text"><div class="ui-note__title">Dolore magna</div><div class="ui-note__body">Aliqua ut enim</div></div></li>
-                </ul>
-              </div>
-            </div></div>
-          </div>
+          <div class="panel panel--inset"><img class="frame__img" src="pic-card-3.svg" alt="Image 4" width="800" height="600"></div>
         </article>
         <article class="card card--row span-3">
           <h3>Sed do eiusmod</h3>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
           <a class="link card__link" href="#" data-ev="feature_versand">Lorem ipsum</a>
-          <div class="panel panel--inset" role="img" aria-label="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
-            <div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max: 340px; --ay: 20px; --ax: 8px" aria-hidden="true">
-              <div class="ui ui-panel ui-win ui-win--compact">
-                <div class="ui-win__bar"><div class="ui-dots"><i></i><i></i><i></i></div><div class="ui-win__crumb">Lorem <i>/</i> <b>Ipsum</b></div></div>
-                <div class="ui-win__body">
-                  <div class="ui-win__main">
-                    <ul class="ui-win__rows">
-                      <li class="ui-win__row"><div class="ui-avatar" data-tone="4">LI</div><div class="ui-win__who">Ipsum</div><div class="ui-win__sub">Adipiscing</div><div class="ui-win__st is-done">Adipiscing</div></li>
-                      <li class="ui-win__row"><div class="ui-avatar" data-tone="4">DA</div><div class="ui-win__who">Amet</div><div class="ui-win__sub">Consectetur elit</div><div class="ui-win__st">Eiusmod</div></li>
-                      <li class="ui-win__row"><div class="ui-avatar" data-tone="4">SE</div><div class="ui-win__who">Eiusmod</div><div class="ui-win__sub">Adipiscing</div><div class="ui-win__st is-done">Tempor</div></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div></div>
-          </div>
+          <div class="panel panel--inset"><img class="frame__img" src="pic-card-4.svg" alt="Image 5" width="800" height="600"></div>
         </article>
       </div>
     </div>
@@ -183,21 +110,10 @@
       <div class="grid grid--top fill">
         <div class="split-col span-5">
           <p class="t-lead">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <div class="btn-row split-col__end"><a class="btn btn--primary" href="#" data-ev="click_cta_after_example">Dolor sit amet<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a></div>
+          <div class="btn-row split-col__end"><a class="btn btn--primary" href="#" data-ev="click_cta_after_example">Dolor sit amet</a></div>
         </div>
-        <div class="frame frame--fill span-6 start-7" role="img" aria-label="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
-          <div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max: 440px; --ax: 32px; --ay: 48px" aria-hidden="true">
-            <div class="ui ui-panel ui-checks">
-              <div class="ui-checks__head"><div class="ui-title">Lorem ipsum · Dolor 312</div><div class="ui-spacer"></div><div class="ui-meta">3 / 4</div></div>
-              <div class="ui-checks__bar"><i style="--k:0.75"></i></div>
-              <ul class="ui-checks__list">
-                <li class="ui-check is-done"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Lorem ipsum dolor sit, amet consectetur</span></li>
-                <li class="ui-check is-done"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Adipiscing: elit sed do eiusmod</span></li>
-                <li class="ui-check is-done"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Tempor incididunt ut labore</span></li>
-                <li class="ui-check"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Dolore magna aliqua ut enim ad</span></li>
-              </ul>
-            </div>
-          </div></div>
+        <div class="frame frame--fill span-6 start-7">
+          <img class="frame__img" src="pic-example.svg" alt="Image 6" width="1200" height="800">
         </div>
       </div>
     </div>
@@ -211,13 +127,8 @@
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
         </div>
         <div class="span-6 stack-5">
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
@@ -255,8 +166,7 @@
         <div class="form">
           <div class="field"><label for="behandlungen">Lorem ipsum dolor</label><select id="behandlungen" data-ev-focus="form_start"><option value="">— lorem —</option><option>Ipsum I</option><option>Ipsum II</option><option>Ipsum III</option><option>Ipsum IV</option></select></div>
         </div>
-        <a class="btn btn--primary btn--xl btn--wide" href="#" data-ev="form_submit_click">Incipe<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
-        <p class="t-small">Excepteur sint occaecat · Cupidatat non proident sunt in culpa</p>
+        <a class="btn btn--primary btn--xl btn--wide" href="#" data-ev="form_submit_click">Incipe</a>
       </div>
     </div>
   </section>
@@ -265,7 +175,7 @@
 <footer class="footer footer--statement">
   <div class="wrap">
     <div class="grid grid--top">
-      <div class="span-6"><p class="footer__mark"><span class="mark" data-mark="ring" aria-hidden="true"></span>Lorem Ipsum</p></div>
+      <div class="span-6"><p class="footer__mark">Lorem Ipsum</p></div>
       <div class="span-5 start-8 stack-4">
         <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.</p>
         <p><a class="link" href="#" data-ev="click_legal_privacy">Privacy</a></p>
